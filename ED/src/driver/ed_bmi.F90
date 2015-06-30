@@ -1,7 +1,6 @@
 
 !==========================================================================================!
-! Author: Kyle Shannon <kyle at pobox dot com>
-! Copyright (c) 2015, Boise State University
+! Put author and copyright here when we've replaced the code.
 !==========================================================================================!
 ! Basic Model Interface for ED model.
 !------------------------------------------------------------------------------------------!
