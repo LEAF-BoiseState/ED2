@@ -98,6 +98,11 @@ ed_bigleaf_init.o : $(ED_INIT)/ed_bigleaf_init.f90
 	/bin/cp -f $< $(<F:.f90=.f90)
 	$(F90_COMMAND) $(<F:.f90=.f90)
 
+ed_bmi.o : $(ED_DRIVER)/ed_bmi.F90
+	/bin/rm -f $(<F:.F90=.F90)
+	/bin/cp -f $< $(<F:.F90=.F90)
+	$(FPP_COMMAND) $(<F:.F90=.F90)
+
 ed_driver.o : $(ED_DRIVER)/ed_driver.F90
 	/bin/rm -f $(<F:.F90=.F90)
 	/bin/cp -f $< $(<F:.F90=.F90)

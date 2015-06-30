@@ -47,9 +47,9 @@ USE_HDF5=1
 
 HDF5_INCS=-I${HDF5_HOME}/include
 HDF5C_INCS=-I${HDF5_HOME}/include
-HDF5_LIBS=${HDF5_HOME}/lib/libhdf5_fortran.a \
-        ${HDF5_HOME}/lib/libhdf5.a \
-        ${HDF5_HOME}/lib/libhdf5_hl.a -lz
+HDF5_LIBS=${HDF5_HOME}/lib/x86_64-linux-gnu/libhdf5_fortran.a \
+        ${HDF5_HOME}/lib/x86_64-linux-gnu/libhdf5.a \
+        ${HDF5_HOME}/lib/x86_64-linux-gnu/libhdf5_hl.a -lz
 
 USE_COLLECTIVE_MPIO=0
  
@@ -76,7 +76,7 @@ USE_INTERF=1
 # the wall time (the only double-precision intrinsic).  In case
 # you don't have it, leave USE_MPIWTIME=0, in which case it will
 # use a simpler, single-precision function.
-USE_MPIWTIME=1
+USE_MPIWTIME=0
 
 
 # GFORTRAN DEVELOPERS: REMOVE ffree-line-length-0

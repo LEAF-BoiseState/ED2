@@ -20,6 +20,7 @@ rm -fv disturb_coms.o             disturb_coms.mod
 rm -fv edio.o                     edio.mod 
 rm -fv ed_1st.o                   ed_1st.mod 
 rm -fv ed_bigleaf_init.o          ed_bigleaf_init.mod 
+rm -fv ed_bmi.o                   ed_bmi.mod 
 rm -fv ed_driver.o                ed_driver.mod 
 rm -fv ed_filelist.o              ed_filelist.mod 
 rm -fv ed_grid.o                  ed_grid.mod 
