@@ -89,16 +89,16 @@ module ed_work_vars
       type (work_vars) :: worke
       !------------------------------------------------------------------------------------!
 
-      nullify (worke%glon    )
-      nullify (worke%glat    )
-      nullify (worke%xatm    )
-      nullify (worke%yatm    )
-      nullify (worke%work    )
-      nullify (worke%land    )
-      nullify (worke%landfrac)
-      nullify (worke%soilfrac)
-      nullify (worke%ntext   )
-      nullify (worke%nscol   )
+      if (associated(worke%glon     )) nullify (worke%glon    )
+      if (associated(worke%glat     )) nullify (worke%glat    )
+      if (associated(worke%xatm     )) nullify (worke%xatm    )
+      if (associated(worke%yatm     )) nullify (worke%yatm    )
+      if (associated(worke%work     )) nullify (worke%work    )
+      if (associated(worke%land     )) nullify (worke%land    )
+      if (associated(worke%landfrac )) nullify (worke%landfrac)
+      if (associated(worke%soilfrac )) nullify (worke%soilfrac)
+      if (associated(worke%ntext    )) nullify (worke%ntext   )
+      if (associated(worke%nscol    )) nullify (worke%nscol   )
 
       return
    end subroutine ed_nullify_work
@@ -180,15 +180,15 @@ module ed_work_vars
       !------------------------------------------------------------------------------------!
 
 
-      nullify(workv%glon    )
-      nullify(workv%glat    )
-      nullify(workv%work    )
-      nullify(workv%landfrac)
-      nullify(workv%soilfrac)
-      nullify(workv%ntext   )
-      nullify(workv%nscol   )
-      nullify(workv%xid     )
-      nullify(workv%yid     )
+      if (associated(workv%glon    ))   nullify(workv%glon    )
+      if (associated(workv%glat    ))   nullify(workv%glat    )
+      if (associated(workv%work    ))   nullify(workv%work    )
+      if (associated(workv%landfrac))   nullify(workv%landfrac)
+      if (associated(workv%soilfrac))   nullify(workv%soilfrac)
+      if (associated(workv%ntext   ))   nullify(workv%ntext   )
+      if (associated(workv%nscol   ))   nullify(workv%nscol   )
+      if (associated(workv%xid     ))   nullify(workv%xid     )
+      if (associated(workv%yid     ))   nullify(workv%yid     )
 
       return
    end subroutine ed_nullify_work_vec
