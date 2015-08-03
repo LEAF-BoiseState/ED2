@@ -74,7 +74,7 @@ recursive subroutine read_ed_xml_config(filename)
   use soil_coms  !, only: infiltration_method, dewmax, water_stab_thresh
 !  use ed_data
   use ed_misc_coms!, only: ied_init_mode,ffilout,integration_scheme,sfilin,sfilout,thsums_database
-  use rk4_coms, only : rk4min_veg_temp
+  use rk4_coms, only : rk4min_veg_temp,effarea_transp
   implicit none
   integer(4) :: i,npft,ntag,myPFT,nlu,myLU,len,ival = 0
   logical(4) :: texist = .false.
@@ -1226,6 +1226,7 @@ subroutine write_ed_xml_config
   use canopy_radiation_coms
   use decomp_coms
   use ed_misc_coms, only: sfilout
+  use rk4_coms, only: effarea_transp
   implicit none
   integer :: ival
   character(512) :: xfilout 
