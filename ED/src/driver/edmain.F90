@@ -125,7 +125,6 @@ program main
       end if
       cargs(n)=trim(cargx)//char(0)
    end do
-   numarg=numarg+1
    !---------------------------------------------------------------------------------------!
 
 
