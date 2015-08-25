@@ -2230,6 +2230,10 @@ module ed_state_vars
       real,pointer,dimension(:) :: fmean_fs_open          ! Net stress factor   [        --]
       real,pointer,dimension(:) :: fmean_fsw              ! Moisture stress     [        --]
       real,pointer,dimension(:) :: fmean_fsn              ! Nitrogen stress     [        --]
+
+      real,pointer,dimension(:) :: fmean_a_closed         ! Assim. max stress   [umol/m2l/s]
+      real,pointer,dimension(:) :: fmean_a_open           ! Assim. no stress    [umol/m2l/s]
+
       real,pointer,dimension(:) :: fmean_a_net            ! Assim. actual       [umol/m2l/s]
       real,pointer,dimension(:) :: fmean_a_light          ! Assim. (light)      [umol/m2l/s]
       real,pointer,dimension(:) :: fmean_a_rubp           ! Assim. (RuBP)       [umol/m2l/s]
