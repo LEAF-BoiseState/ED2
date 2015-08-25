@@ -304,8 +304,8 @@ $ED_NL
    ! SFILOUT -- Path and prefix for history files.                                         !
    !---------------------------------------------------------------------------------------!
 
-   NL%FFILOUT = './tmp'
-   NL%SFILOUT = './tmp'
+   NL%FFILOUT = '/home/kyle/src/bsu/ed/ED/run/tmp'
+   NL%SFILOUT = '/home/kyle/src/bsu/ed/ED/run/tmp'
 
    !---------------------------------------------------------------------------------------!
 
@@ -388,7 +388,7 @@ $ED_NL
 
    ! NL%SFILIN   = '/n/gstore/Labs/moorcroft_data_protected/mlongo/data/ed2_data/site_bio_data/s67_default.'
    ! XXX
-   NL%SFILIN   = './tmp/ED-2.1/input_data/restart_files/tow.'
+   NL%SFILIN   = '/home/kyle/src/bsu/ed/ED/run/tmp/ED-2.1/input_data/restart_files/tow.'
 
    !---------------------------------------------------------------------------------------!
 
@@ -552,14 +552,14 @@ $ED_NL
    !                      soil temperature and moisture.                                   !
    !  SOILDEPTH_DB     -- Dataset in case you want to read in soil depth information.      !
    !---------------------------------------------------------------------------------------!
-   NL%VEG_DATABASE      = './tmp/ED-2.1/input_data/veg_OGE2/OGE2_'
-   NL%SOIL_DATABASE     = './tmp/ED-2.1/input_data/soil/type_FAO/FAO_'
+   NL%VEG_DATABASE      = '/home/kyle/src/bsu/ed/ED/run/tmp/ED-2.1/input_data/veg_OGE2/OGE2_'
+   NL%SOIL_DATABASE     = '/home/kyle/src/bsu/ed/ED/run/tmp/ED-2.1/input_data/soil/type_FAO/FAO_'
    NL%LU_DATABASE       = ''
    NL%PLANTATION_FILE   = ''
-   NL%THSUMS_DATABASE   = './tmp/ED-2.1/input_data'
-   NL%ED_MET_DRIVER_DB  = './tmp/ED-2.1/test_run/HARVARD_MET'
-   NL%SOILDEPTH_DB      = './tmp/ED-2.1/input_data/soil/tempmoist/STW1996OCT.dat'
-   NL%SOILSTATE_DB      = './tmp/ED-2.1/input_data/soil/depth/soil_depths.dat'
+   NL%THSUMS_DATABASE   = '/home/kyle/src/bsu/ed/ED/run/tmp/ED-2.1/input_data'
+   NL%ED_MET_DRIVER_DB  = '/home/kyle/src/bsu/ed/ED/run/tmp/ED-2.1/test_run/HARVARD_MET'
+   NL%SOILDEPTH_DB      = '/home/kyle/src/bsu/ed/ED/run/tmp/ED-2.1/input_data/soil/tempmoist/STW1996OCT.dat'
+   NL%SOILSTATE_DB      = '/home/kyle/src/bsu/ed/ED/run/tmp/ED-2.1/input_data/soil/depth/soil_depths.dat'
 
    !---------------------------------------------------------------------------------------!
 
@@ -1468,7 +1468,7 @@ $ED_NL
    NL%IPHENYSF = 2003
    NL%IPHENYF1 = 1992
    NL%IPHENYFF = 2003
-   NL%PHENPATH = './tmp/ED-2.1/input_data/phenology/phenology'
+   NL%PHENPATH = '/home/kyle/src/bsu/ed/ED/run/tmp/ED-2.1/input_data/phenology/phenology'
    !---------------------------------------------------------------------------------------!
 
 
