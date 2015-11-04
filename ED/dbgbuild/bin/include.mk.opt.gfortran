@@ -60,19 +60,24 @@ USE_HDF5=1
 #	/sw/hdf5-1.6.6-gfortran/lib/libhdf5.a \
 #	/sw/hdf5-1.6.6-gfortran/lib/libhdf5_hl.a
 
-HDF5_INCS=-I/usr/local/hdf5-1.8.2/include
-HDF5C_INCS=-I/usr/local/hdf5-1.8.2/include
-HDF5_LIBS=-lz /usr/local/hdf5-1.8.2/lib/libhdf5_fortran.a \
-        /usr/local/hdf5-1.8.2/lib/libhdf5.a \
-        /usr/local/hdf5-1.8.2/lib/libhdf5_hl.a
+#HDF5_INCS=-I/usr/local/hdf5-1.8.2/include
+#HDF5C_INCS=-I/usr/local/hdf5-1.8.2/include
+#HDF5_LIBS=-lz /usr/local/hdf5-1.8.2/lib/libhdf5_fortran.a \
+#        /usr/local/hdf5-1.8.2/lib/libhdf5.a \
+#        /usr/local/hdf5-1.8.2/lib/libhdf5_hl.a
 
 
 # tormenta.mit.edu
 
-HDF5_INCS=-I/opt/hdf5/1.8.1/ompi-tcp-gnu41/include
-HDF5C_INCS=-I/opt/hdf5/1.8.1/ompi-tcp-gnu41/include
-HDF5_LIBS=-lz -L/opt/hdf5/1.8.1/ompi-tcp-gnu41/lib \
-	-lhdf5_fortran -lhdf5 -lhdf5_hl
+#HDF5_INCS=-I/opt/hdf5/1.8.1/ompi-tcp-gnu41/include
+#HDF5C_INCS=-I/opt/hdf5/1.8.1/ompi-tcp-gnu41/include
+#HDF5_LIBS=-lz -L/opt/hdf5/1.8.1/ompi-tcp-gnu41/lib \
+#	-lhdf5_fortran -lhdf5 -lhdf5_hl
+HDF5_INCS=-I${HDF5_HOME}/include
+HDF5C_INCS=-I${HDF5_HOME}/include
+HDF5_LIBS=${HDF5_HOME}/lib/x86_64-linux-gnu/libhdf5_fortran.a \
+        ${HDF5_HOME}/lib/x86_64-linux-gnu/libhdf5.a \
+        ${HDF5_HOME}/lib/x86_64-linux-gnu/libhdf5_hl.a -lz
 #---------------------------------------------------------------
 # If you have a version of hdf5 compiled in parallel, then you
 # may benefit from collective I/O, then use this flag = 1

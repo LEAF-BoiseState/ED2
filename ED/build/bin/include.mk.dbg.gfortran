@@ -44,12 +44,13 @@ BASE=$(ED_ROOT)/build/
 # library files. Make sure you include the zlib.a location too.
 
 USE_HDF5=1
+HDF5_HOME=/usr
 
 HDF5_INCS=-I${HDF5_HOME}/include
 HDF5C_INCS=-I${HDF5_HOME}/include
-HDF5_LIBS=${HDF5_HOME}/lib/libhdf5_fortran.a \
-        ${HDF5_HOME}/lib/libhdf5.a \
-        ${HDF5_HOME}/lib/libhdf5_hl.a -lz
+HDF5_LIBS=${HDF5_HOME}/lib/x86_64-linux-gnu/libhdf5_fortran.a \
+        ${HDF5_HOME}/lib/x86_64-linux-gnu/libhdf5.a \
+        ${HDF5_HOME}/lib/x86_64-linux-gnu/libhdf5_hl.a -lz
 
 USE_COLLECTIVE_MPIO=0
  
@@ -92,7 +93,7 @@ C_OPTS=-g -O0 -ffpe-trap=invalid,zero,overflow -fbounds-check
 LOADER=mpif90
 LOADER_OPTS=${F_OPTS}
 C_LOADER=mpicc
-LIBS=
+LIBS=-lmpi_f90
 MOD_EXT=mod
 
 
