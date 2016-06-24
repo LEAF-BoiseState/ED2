@@ -48,9 +48,9 @@ USE_HDF5=1
 HDF5_HOME=/usr
 HDF5_INCS=-I${HDF5_HOME}/include
 HDF5C_INCS=-I${HDF5_HOME}/include
-HDF5_LIBS=${HDF5_HOME}/lib/x86_64-linux-gnu/libhdf5_fortran.a \
-        ${HDF5_HOME}/lib/x86_64-linux-gnu/libhdf5.a \
-        ${HDF5_HOME}/lib/x86_64-linux-gnu/libhdf5_hl.a -lz
+HDF5_LIBS=${HDF5_HOME}/lib/libhdf5_fortran.a \
+        ${HDF5_HOME}/lib/libhdf5.a \
+        ${HDF5_HOME}/lib/libhdf5_hl.a -lz
 
 USE_COLLECTIVE_MPIO=0
  
@@ -87,7 +87,7 @@ USE_MPIWTIME=1
 #----------------- gfortran on Linux (optimized build)-----------
 CMACH=PC_GFORTRAN
 F_COMP=mpif90
-F_OPTS=-g -ffree-line-length-none -O2 -fopenmp -fno-whole-file #-ffpe-trap=invalid,zero,overflow -fbounds-check  #-O2
+F_OPTS=-g -ffree-line-length-none -O2 -fopenmp #-ffpe-trap=invalid,zero,overflow -fbounds-check  #-O2
 C_COMP=mpicc 
 C_OPTS=-g -O2 -fopenmp #-ffpe-trap=invalid,zero,overflow -fbounds-check #-O2
 LOADER=mpif90
